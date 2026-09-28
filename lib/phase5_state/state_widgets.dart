@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-/// BEFORE: setState poori screen rebuild karta hai (Header + Footer bhi).
 class BeforeState extends StatefulWidget {
   const BeforeState({super.key});
 
@@ -30,7 +29,6 @@ class _BeforeStateState extends State<BeforeState> {
   }
 }
 
-/// AFTER: ValueNotifier + ValueListenableBuilder, sirf Text rebuild hota hai.
 class AfterState extends StatefulWidget {
   const AfterState({super.key});
 

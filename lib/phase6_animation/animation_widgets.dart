@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-/// Heavy static background: bahut saare items, kabhi change nahi hota.
 class HeavyBackground extends StatelessWidget {
   const HeavyBackground({super.key});
 
@@ -53,7 +52,6 @@ class _SpinningBoxState extends State<_SpinningBox>
   }
 }
 
-/// BEFORE: animation ke saath background bhi baar baar repaint hota hai.
 class BeforeAnimation extends StatelessWidget {
   const BeforeAnimation({super.key});
 
@@ -69,8 +67,6 @@ class BeforeAnimation extends StatelessWidget {
   }
 }
 
-/// AFTER: RepaintBoundary background ko alag layer me rakhta hai,
-/// isliye animation se uska repaint nahi hota.
 class AfterAnimation extends StatelessWidget {
   const AfterAnimation({super.key});
 
